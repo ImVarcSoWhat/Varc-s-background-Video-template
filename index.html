@@ -1,0 +1,194 @@
+<head>
+   <!--Metas-->
+
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="description" content="">
+      <meta name="keywords" content="">
+      <meta name="author" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+   <!--Css Links-->
+
+      <link rel="stylesheet" href="assets/css/main.css" />
+      <link rel='stylesheet' href='assets/css/bootstrap.min.css'>
+      <link rel='stylesheet' href='assets/css/vendor.css'>
+      <link rel='stylesheet' href='assets/css/theme_black_red.css' id="theme">
+      <link rel='stylesheet' href='assets/css/custom.css'>
+      <link rel='stylesheet' href='assets/css/demo.css'>
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@600&display=swap" rel="stylesheet"> 
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="assets/css/Cursor.css">
+   <!--scripts-->
+
+      <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
+      <script src='assets/js/vendor/html5shiv.min.js'></script> 
+
+   <!--Cursor-->  
+   
+      <div class="cursor"></div>
+      <script src="assets/js/Cursor.js"></script>
+      <link rel="stylesheet" media="screen" href="Css/style.css">
+      <script src="assets/js/Cursor.js">
+      //
+      </script> 
+
+                     <!--icon of tab-->
+                        <link rel="icon" type="image/ico" href="JDM-Turbo-logo.png" /> 
+
+                                       <!--Website Tab Name-->
+                                             <title>|Varc|</title>
+                                       <!---->
+</head>
+
+<body onLoad="scrlsts()">
+   <div class="site-loader">
+      <span></span>
+      <p>Loading |Varc|
+      </p>
+   </div>
+   <div class="video">
+      <video id="video" autoplay loop onloadstart="this.volume=0.06">
+         <!--
+            Por o Nome do ficheiro do video aqui
+            !!O VIDEO TEM DE ESTAR NA PASTA ONDE SE ENCONTRA "index.html"!!
+         -->
+         <source src="Videos/Dxrk ダーク - RAVE.mp4" type="video/mp4">
+         </source>
+      </video>
+   </div>
+   <div class="site-bg">
+      <div class="site-bg__overlay"></div>
+      <div class="site_countdown"></div>
+      <div class="site-bg__effect"></div>
+      <canvas class="site-bg__canvas"></canvas>
+   </div>
+   </header>
+   <div class="loading">
+      <div id="wrapper">
+         <div id="main">
+            <header id="header">
+               <h1 class="gloria">Varc</h1>
+               <h2 class="gloria"><font size="2">#1994</font>
+               </h2>
+               <nav>
+                  <ul>
+                     <li>
+                        <a href="https://steamcommunity.com/id/id/varc-02/" class="icon fa-spin fa-steam" target="_blank">
+                           <span class="label">Steam</span>
+                        </a>
+                        </li>
+                     <li>
+                        <a href="https://twitter.com/iVaaaaarcs" class="fab fa-spin fa-twitter" target="_blank">
+                        <span class="label">Twitter</span>
+                           </a>
+                     </li>
+                   <!-- 
+                     <li>
+                     <a href="Discord_Invite_Link" class="fab fa-spin fa-discord" target="_blank">
+                        <span class="label">Discord</span></a>
+                     </li>
+                  -->
+               </nav>
+            </header>
+         </div>
+      </div>
+   </div>
+   <script src="assets/js/vendor/jquery-2.1.4.min.js"></script>
+   <script src='assets/js/vendor/bootstrap.min.js'></script>
+   <script src='assets/js/vendor/plugin.js'></script>
+   <script src='assets/js/variable.js'></script>
+   <script src='assets/js/main.js'></script>
+   <script src='assets/js/demo.js'></script>
+</body>
+
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+   <script language="JavaScript">
+      //---------------F12 disable code----------------------//
+      document.onkeypress = function (event) {
+         event = (event || window.event);
+         if (event.keyCode == 123) {
+            //alert('No F-12');
+            return false;
+         }
+      }
+      document.onmousedown = function (event) {
+         event = (event || window.event);
+         if (event.keyCode == 123) {
+            //alert('No F-keys');
+            return false;
+         }
+      }
+      document.onkeydown = function (event) {
+         event = (event || window.event);
+         if (event.keyCode == 123) {
+            //alert('No F-keys');
+            return false;
+         }
+      }
+      var message = ":o";
+
+      function clickIE() {
+         if (document.all) {
+            (message);
+            return false;
+         }
+      }
+
+      function clickNS(e) {
+         if (document.layers || (document.getElementById && !document.all)) {
+            if (e.which == 2 || e.which == 3) {
+               (message);
+               return false;
+            }
+         }
+      }
+      if (document.layers) {
+         document.captureEvents(Event.MOUSEDOWN);
+         document.onmousedown = clickNS;
+      } else {
+         document.onmouseup = clickNS;
+         document.oncontextmenu = clickIE;
+      }
+      document.oncontextmenu = new Function("return false")
+
+      function disableCtrlKeyCombination(e) {
+         var forbiddenKeys = new Array('a', 'n', 'c', 'x', 'v', 'j', 'w');
+         var key;
+         var isCtrl;
+         if (window.event) {
+            key = window.event.keyCode;
+            if (window.event.ctrlKey)
+               isCtrl = true;
+            else
+               isCtrl = false;
+         } else {
+            key = e.which;
+            if (e.ctrlKey)
+               isCtrl = true;
+            else
+               isCtrl = false;
+         }
+         if (isCtrl) {
+            for (i = 0; i < forbiddenKeys.length; i++) {
+               if (forbiddenKeys[i].toLowerCase() == String.fromCharCode(key).toLowerCase()) {
+                  alert('Key combination CTRL + ' + String.fromCharCode(key) + ' has been disabled.');
+                  return false;
+               }
+            }
+         }
+         return true;
+      }
+   </script>
+</head>
+
+</html>
